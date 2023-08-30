@@ -1,0 +1,38 @@
+<html>
+    <body>
+        <form method="POST">
+            {% csrf_token %}
+            <table>
+                <td>
+                    first number
+                 </td>
+                 <td>
+                     <input type="text" name="txtfirstname">
+                 </td>
+                
+             </tr>
+             <tr>
+                 <td>
+                     last number
+                  </td>
+                  <td>
+                  <input type="text" name="txtlastname">
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                      <button type="submit" name="ADD">ADD</button>
+                      <button type="submit" name="SUB">SUB</button>
+                      <button type="submit" name="MUL">MUL</button>
+                      <button type="submit" name="DIV">DIV</button>
+                 </td>
+             </tr>
+             <tr>
+                <td>
+                 {{result}}
+                </td> 
+             </tr>
+            </table>
+        </form>
+    </body>
+</html>
